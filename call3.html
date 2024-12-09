@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Call back in 3s</title>
+<script>
+function remove(str) {
+    return str.replace(/[A-Z]/g, '');
+}
+function delayed(callback, str) {
+    setTimeout(() => {
+        callback(str);
+    }, 3000);
+}
+function display(transformedStr) {
+    document.getElementById("ts").innerText = "String after removing Uppercase ::" + transformedStr;
+}
+function processString() {
+    var inputString = document.getElementById("i").value;
+    var transformedString = remove(inputString);
+    delayed(display, transformedString);
+}
+</script>   
+</head>
+<body>
+<label for="i">Enter a string:</label>
+<input type="text" id="i">
+<button onclick="processString()">Convert</button><br>
+<p id="ts"></p>
+</body>
+</html>
