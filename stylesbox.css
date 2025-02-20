@@ -1,0 +1,48 @@
+.h1{
+    left:75px;
+  top: 25px;
+  position: relative;
+  width: 300px;
+  border: 5px solid red;
+  padding: 3px;
+  margin: 20px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  color:tomato;
+  background-color:burlywood;
+}
+@keyframes example {
+    from {background-color: rgb(143, 13, 52);}
+    to {background-color: rgb(175, 83, 46);}
+  }
+  body{
+    animation-name: example;
+    animation-duration: 4s;
+  animation-delay:2s;
+  }
+.h2{
+    left:75px;
+  top: 0px;
+  position: relative;
+  width: 600px;
+  border: 5px solid green;
+  padding: 3px ;
+  margin: 20px;
+  font-size: 25px;
+  color:greenyellow;
+  background-color:burlywood;
+  
+}
+.h3{
+    left:75px;
+  bottom: 25px;
+  position: relative;
+  width: 800px;
+  border: 5px solid blue;
+  padding: 3px;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color:indigo;
+  background-color:burlywood;
+}
